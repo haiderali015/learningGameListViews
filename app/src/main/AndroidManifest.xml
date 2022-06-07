@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KidsGame">
         <activity
+            android:name=".customListView"
+            android:exported="false" />
+        <activity
             android:name=".secondA"
             android:exported="false" />
         <activity
