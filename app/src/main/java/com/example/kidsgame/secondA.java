@@ -21,8 +21,8 @@ public class secondA extends MainActivity {
         setContentView(R.layout.activity_second);
         lv=findViewById(R.id.lv);
 
-        String []name={"A for Apple","B for Banana","C for Cat","D for dog","E for Egg"};
-        Integer[]img={R.drawable.apple,R.drawable.banana,R.drawable.cat,R.drawable.dog,R.drawable.egg};
+        String []name={"A for Apple","B for Banana","C for Cat","D for dog","E for Egg","F for fish","G for Glue","H for Hat","I for Ice","J for Jug","K for Key","L for Lion","M for Monkey","N for Nose","O for Orange","P for Pen","Q for Quack","R for Rabbit","S for Star","T for Ten","U for Umbrella","V for Van","W for Whale","X for Xray","Y for Yogurt","Z for Zebra"};
+        Integer[]img={R.drawable.apple,R.drawable.banana,R.drawable.cat,R.drawable.dog,R.drawable.egg,R.drawable.fish,R.drawable.glue,R.drawable.hat,R.drawable.ice,R.drawable.jug,R.drawable.key,R.drawable.lion,R.drawable.monkey,R.drawable.nose,R.drawable.orange,R.drawable.pen,R.drawable.quack,R.drawable.rabbit,R.drawable.star,R.drawable.ten,R.drawable.umbrella,R.drawable.van,R.drawable.whale,R.drawable.xray,R.drawable.yogurt,R.drawable.zebra};
 
         MyListAdapter adapter=new MyListAdapter(this, name,img);
         lv.setAdapter(adapter);
