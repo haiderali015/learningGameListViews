@@ -6,8 +6,13 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 
 public class MainActivity extends AppCompatActivity {
+    ListView lv;
+    String []name={"A for Apple","B for Banana","C for Cat","D for Dog","E for Egg","F for Fish","G for Glue"};
+
+    Integer[]img={R.drawable.apple,R.drawable.banana,R.drawable.cat,R.drawable.dog,R.drawable.egg,R.drawable.fish};
 
     Button btn,btn1,btn2;
     @Override
