@@ -8,14 +8,17 @@ import android.widget.BaseAdapter;
 
 public class custombaseAdapter extends BaseAdapter {
 
-    Context ctx;
+    Context context;
     String [] listFruit;
     int[] ListImages;
     LayoutInflater inflater;
 
     public custombaseAdapter(Context ctx, String [] fruitList, int[] images)
     {
-
+        this.context=ctx;
+        this.listFruit=fruitList;
+        this.ListImages=images;
+        inflater=LayoutInflater.from(ctx);
     }
     @Override
     public int getCount() {
