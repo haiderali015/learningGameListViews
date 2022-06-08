@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class custombaseAdapter extends BaseAdapter {
 
@@ -22,7 +24,7 @@ public class custombaseAdapter extends BaseAdapter {
     }
     @Override
     public int getCount() {
-        return 0;
+        return listFruit.length;
     }
 
     @Override
@@ -36,7 +38,12 @@ public class custombaseAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-        return null;
+    public View getView(int position, View convertView, ViewGroup parent) {
+        convertView=inflater.inflate(R.layout.activity_custom_list_view, null);
+        TextView txtview=(TextView) convertView.findViewById(R.id.textview);
+        txtview.setText(listFruit[position]);
+        ImageView fruitimg= (ImageView) convertView.findViewById(R.id.imageIcon);
+        fruitimg.setImageResource(ListImages[position]);
+        return convertView;
     }
 }
