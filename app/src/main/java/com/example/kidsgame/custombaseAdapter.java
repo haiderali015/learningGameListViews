@@ -1,13 +1,17 @@
 package com.example.kidsgame;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class custombaseAdapter extends BaseAdapter {
 
-    
+    Context ctx;
+    String [] listFruit;
+    int[] ListImages;
+    LayoutInflater inflater;
 
     public custombaseAdapter(Context ctx, String [] fruitList, int[] images)
     {
