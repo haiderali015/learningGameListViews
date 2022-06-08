@@ -1,10 +1,18 @@
 package com.example.kidsgame;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class custombaseAdapter extends BaseAdapter {
+
+    
+
+    public custombaseAdapter(Context ctx, String [] fruitList, int[] images)
+    {
+
+    }
     @Override
     public int getCount() {
         return 0;
