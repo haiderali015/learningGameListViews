@@ -21,4 +21,18 @@ public class secondA extends AppCompatActivity {
         lv.setAdapter(adapter);
 
     }
+    public class MyListAdapter extends ArrayAdapter<String> {
+
+        private final Activity context;
+        private final String[] name;
+        private final Integer[] img;
+
+        public MyListAdapter(Activity context, String[] name,Integer[] img) {
+            super(context, R.layout.customlist, name);
+            // TODO Auto-generated constructor stub
+
+            this.context=context;
+            this.img = img;
+            this.name=name;
+        }
 }
