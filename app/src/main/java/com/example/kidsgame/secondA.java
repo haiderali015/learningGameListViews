@@ -6,18 +6,17 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 public class secondA extends AppCompatActivity {
+    ListView lv;
+    String []name={"A for Apple","B for Banana","C for Cat","D for Dog","E for Egg","F for Fish","G for Glue"};
 
-    String fruitList [] ={"apple","banana","cat","dog","egg","fish"};
-    int fruitImages [] ={R.drawable.apple,R.drawable.banana,R.drawable.cat,R.drawable.dog,R.drawable.egg,R.drawable.fish};
-    ListView listView;
+    Integer[]img={R.drawable.apple,R.drawable.banana,R.drawable.cat,R.drawable.dog,R.drawable.egg,R.drawable.fish};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
-        listView = (ListView) findViewById(R.id.customListView);
-        custombaseAdapter cstmbaseAdapter = new custombaseAdapter(getApplicationContext(),fruitList,fruitImages);
 
-        listView.setAdapter(custombaseAdapter);
 
     }
 }
