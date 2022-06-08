@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-       /* btn1=findViewById(R.id.repository);
+        btn1=findViewById(R.id.repository);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btn2=findViewById(R.id.exam);
+        /*btn2=findViewById(R.id.exam);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,8 +47,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
 
             }
-        });*/
-
+        });
+*/
 
     }
 
